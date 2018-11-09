@@ -5,18 +5,17 @@ def highest_student_gpa
 end
 
 def lowest_student_gpa
-  min(gpa)
+  "select min(gpa) from students"
 end
 
 def average_student_gpa
-  avg(gpa)
+  "select avg(gpa) from students"
 end
 
 def total_tardies_for_all_students
-  sum(tardies)
+  "select sum(tardies) from students"
 end
 
 def average_gpa_for_9th_grade
-  avg(gpa)
-  where grade = "9"
+  "select avg(gpa) from students where grade = 9"
 end
